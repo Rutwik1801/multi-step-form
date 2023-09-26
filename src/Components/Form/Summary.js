@@ -16,11 +16,12 @@ const Summary = () => {
   const addOnsFiltered = options.filter((i) => addOns.includes(i.name));
   
 const handleClick = () => {
-    if (duration.length) {
-      setDuration([]);
-    } else {
-      setDuration(["Yearly"]);
-    }
+    // if (duration.length) {
+    //   setDuration([]);
+    // } else {
+    //   setDuration(["Yearly"]);
+    // }
+  setStep(2);
   }
 
   const handleResetClick=()=>{
