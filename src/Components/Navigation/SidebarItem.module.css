@@ -1,0 +1,57 @@
+.itemWrapper {
+  display: flex;
+  color: hsl(231, 100%, 99%);
+  gap: 1.5rem;
+}
+
+span {
+  display: block;
+}
+
+.index {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid hsl(231, 100%, 99%);
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-weight: 500;
+}
+
+.index.active {
+  background: hsl(206, 94%, 87%);
+  color: 
+hsl(213, 96%, 18%);
+  border-color: hsl(206, 94%, 87%);
+}
+
+.stepWrapper {
+  text-transform: uppercase;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  font-size: 0.925rem;
+  letter-spacing: 1.4px;
+}
+
+.stepWrapper span:first-child {
+  font-size: 0.825rem;
+  color: hsl(217, 100%, 97%);
+  font-weight: 300;
+  letter-spacing: initial;
+}
+
+@media (max-width: 940px){
+  .itemWrapper {
+    gap: 0.875rem;
+  }
+  .stepInfo {
+    display: none;
+  }
+  .stepTitle{
+    display: none;
+  }
+}

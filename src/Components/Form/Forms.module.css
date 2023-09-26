@@ -1,0 +1,15 @@
+.formWrapper {
+  padding: 3.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 940px){
+.formWrapper {
+  padding: 2rem 1.5rem;
+  margin: -7rem auto;
+  width: 90%;
+  height: 38rem;
+  background: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+}
+}

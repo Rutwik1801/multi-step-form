@@ -1,0 +1,82 @@
+.planWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.durationWrapper {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem 0;
+  background: hsl(231, 100%, 99%);
+  border-radius: 0.5rem;
+}
+
+.durationWrapper span {
+  font-weight: 500;
+  color: hsl(231, 11%, 63%);
+}
+
+.durationWrapper span.active {
+  color: 
+hsl(213, 96%, 18%);
+}
+
+.planItem {
+  border: 1px solid hsl(229, 24%, 87%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: calc((100% - 2rem) / 3);
+  cursor: pointer;
+}
+
+.planItem.active {
+  border-color: hsl(243, 100%, 62%);
+}
+
+.planItem h2 {
+  font-weight: 500;
+  color: 
+hsl(213, 96%, 18%);
+  margin-bottom: 0.5rem;
+}
+
+.planItem p {
+  color: hsl(231, 11%, 63%);
+  margin-bottom: 0.5rem;
+}
+
+.planItem span {
+  color: 
+hsl(213, 96%, 18%);
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.flexParent {
+  display: flex;
+  align-items: flex-end;
+  flex: 1;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  align-items: flex-end;
+}
+
+@media (max-width: 940px){
+  .planWrapper {
+    flex-direction: column;
+  }
+  .planWrapper .planItem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.75rem;
+  }
+}
